@@ -4,6 +4,7 @@ import { motion, useSpring, useTime, useTransform} from "framer-motion";
 import Texts from "../components/Texts";
 import { useEffect } from "react";
 'use client'
+import Spline from '@splinetool/react-spline';
 
 export default function SkillsPage() {
     const time = useTime();
@@ -23,8 +24,6 @@ export default function SkillsPage() {
         {skill: "HTML", imgSrc: "/HtmlLogo.png"},
         {skill: "CSS", imgSrc: "/CssLogo.png"},
         {skill: "JavaScript", imgSrc: "/JSLogo.png"},
-        {skill: "React", imgSrc: "/ReactLogo.png"},
-        {skill: "Android", imgSrc: "/AndroidLogo.png"},
         {skill: "SQL", imgSrc: "/BDLogo.png"},
         {skill: "Python", imgSrc: "/PythonLogo.png"},
         {skill: "Java", imgSrc: "/JavaLogo.png"}
@@ -35,7 +34,7 @@ export default function SkillsPage() {
     <section id="skills" className="bg-[#0f0f19] w-full p-[50px] h-auto py-20 min-h-screen">
         <Titles h1={"My"} h2={"Abilities"} />
         <motion.div 
-        className="flex justify-between flex-wrap gap-8 px-4 my-20"
+        className="flex justify-evenly flex-wrap gap-8 px-4 my-20"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}
@@ -58,19 +57,26 @@ export default function SkillsPage() {
         <h2 className="text-white text-xl md:text-3xl mb-4"
         style={{ fontFamily: "Cinzel", fontWeight: "bolder"}}
         >Current Specialization</h2>
-        <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.5 }}
-        className="relative rounded-md w-full md:w-1/2"
-        >
-            <Texts text={specialization} className={"bg-[#1f1c2f] p-8 z-10 relative w-full"}/>
-            <motion.div 
-            className="absolute -inset-1 rounded-md"
-            style={{background: rotatingBg, filter: pulsingBg}}
-            />
-        </motion.div>
+        <div className="flex flex-col md:flex-row md:justify-between gap-10">
+            <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.5 }}
+            className="relative rounded-md w-full md:w-1/2 h-fit"
+            >
+                <Texts text={specialization} className={"bg-[#1f1c2f] p-8 z-10 relative w-full"}/>
+                <motion.div 
+                className="absolute -inset-1 rounded-md"
+                style={{background: rotatingBg, filter: pulsingBg}}
+                />
+
+            </motion.div>
+            <div className="w-full md:w-[650px] h-[200px] md:h-[300px]">
+            <Spline scene="https://prod.spline.design/4DHmXBgslnUB7hP1/scene.splinecode" />
+            </div>
+        </div>
+        
     </section>
   )
 }   

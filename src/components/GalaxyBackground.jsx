@@ -79,7 +79,7 @@ const GalaxyBackground = (props) => {
   };
 
   return (
-    <div style={{ backgroundColor: bgColor, position: 'relative', width: '100%' }} className="min-h-screen">
+    <div style={{ backgroundColor: bgColor, position: 'relative', width: '100%' }} className="h-auto md:min-h-screen">
       <svg style={{ opacity: opacity, position: 'absolute', pointerEvents: 'none', width: '100%', height: '100%' }} id="galaxy" ref={galaxy} >
         <g id="stars" style={{ width: '100%', height: '100%' }} ref={svgGroup} ></g>
       </svg>

@@ -26,7 +26,7 @@ export const ContactForm = () => {
   };
 
 return (
-    <form ref={form} onSubmit={sendEmail} className="space-y-4 text-white w-full lg:w-1/3 my-10">
+    <form ref={form} onSubmit={sendEmail} className="space-y-4 text-white w-full lg:w-4/5 my-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <input
           type="text"

@@ -1,21 +1,26 @@
 import { ContactForm } from "../components/ContactForm"
 import Titles from "../components/Titles"
 import { motion } from "framer-motion";
+import Spline from '@splinetool/react-spline';
 
 export default function ContactPage() {
     const openLink = (url) => window.open(url, '_blank');
     
     return (
-    <section id="contact" className="bg-[#0f0f19] w-full p-[25px] h-auto lg:h-[95dvh] pt-20">
+    <section id="contact" className="bg-[#0f0f19] w-full p-[25px] h-auto lg:min-h-screen pt-20">
         <Titles h1={"Get in"} h2={"Touch"}/>
         <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: false, amount: 0.5 }}
-        className="flex justify-around items-center flex-wrap h-2/3">
-            <figure></figure>
-            <ContactForm/>
+        className="flex justify-around items-center flex-col md:flex-row">
+            <div className="w-full md:w-3/5">
+            <Spline scene="https://prod.spline.design/oSzwddRMsHinHlXR/scene.splinecode" />
+            </div>
+            <div className="w-full md:w-2/5">
+                <ContactForm/>
+            </div>
         </motion.div>
         <div className="flex w-full h-[10dvh] justify-center items-center gap-4">
             <img src="/GithubLogo.png" alt="git" 
