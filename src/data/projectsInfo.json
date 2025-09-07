@@ -1,0 +1,39 @@
+[
+    {
+      "nombre": "Calculadora",
+      "descripcion": "Calculadora interactiva con hooks, pruebas unitarias y documentación visual con Storybook.",
+      "enlace": "https://github.com/aya-1104/Calculadora_React.git",
+      "tecnologias": ["React", "Vitest", "Storybook"]
+    },
+    {
+      "nombre": "Countries App",
+      "descripcion": "App móvil en Flutter que consume una API GraphQL para mostrar continentes, países y sus detalles",
+      "enlace": "https://github.com/AleWWH1104/AppF.git",
+      "tecnologias": ["Flutter", "GraphQL", "Dart"]
+    },
+    {
+      "nombre": "Meals API",
+      "descripcion": "App móvil desarrollada en Android Studio que consume una API.",
+      "enlace": "https://github.com/AleWWH1104/Lab7_Retrofit.git",
+      "tecnologias": ["Retrofit", "Kotlin", "Jetpack Compose"]
+    },
+    {
+        "nombre": "Wishify",
+        "descripcion": "App móvil desarrollada en Android Studio que permite a los usuarios crear y gestionar listas de deseos personalizadas.",
+        "enlace": "https://github.com/AleWWH1104/Proyecto_PPM.git",
+        "tecnologias": ["Kotlin", "Jetpack Compose", "Retrofit", "Firebase"]
+    },
+    {
+        "nombre": "Cook&Bites",
+        "descripcion": "App móvil desarrollada en Android Studio que permite a los usuarios gestionar recetas de cocina",
+        "enlace": "https://github.com/aya-1104/App_Recipes.git",
+        "tecnologias": ["Kotlin", "Jetpack Compose", "Room"]
+    },
+    {
+      "nombre": "Series Tracker",
+      "descripcion": "Aplicación web que implementa una API RESTful en Go para gestionar una colección de series de TV. Permite realizar operaciones CRUD sobre las series, así como actualizar su estado, marcar episodios vistos y votar por ellas.",
+      "enlace": "https://github.com/AleWWH1104/WEB_Lab6_Backend.git",
+      "tecnologias": ["JavaScript", "Docker", "Golang", "PostgreSQL"]
+    }
+]
+  

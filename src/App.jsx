@@ -1,14 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MainPage from './pages/MainPage'
-import Prueba from './pages/Prueba'
 
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portafolio_of_Iris" >
         <Routes>
-            <Route path='/' element={<MainPage />} />    
-            <Route path='/prueba' element={<Prueba />} />     
+            <Route path='/' element={<MainPage />} />        
         </Routes>
     </BrowserRouter>
   )

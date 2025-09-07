@@ -1,14 +1,5 @@
-import { useEffect, useState } from 'react';
+import projectsData from '../data/projectsInfo.json';
 
 export default function useProjects() {
-    const [projects, setProjects] = useState([]);
-  
-    useEffect(() => {
-        fetch('/projectsInfo.json')
-            .then(res => res.json())
-            .then(data => setProjects(data))
-            .catch(error => console.error('Error cargando proyectos:', error));
-    }, []);
-    
-    return { projects};
+    return { projects: projectsData };
 }

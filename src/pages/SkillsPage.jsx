@@ -21,12 +21,12 @@ export default function SkillsPage() {
     }, [])
 
     const skillsData = [
-        {skill: "HTML", imgSrc: "/HtmlLogo.png"},
-        {skill: "CSS", imgSrc: "/CssLogo.png"},
-        {skill: "JavaScript", imgSrc: "/JSLogo.png"},
-        {skill: "SQL", imgSrc: "/BDLogo.png"},
-        {skill: "Python", imgSrc: "/PythonLogo.png"},
-        {skill: "Java", imgSrc: "/JavaLogo.png"}
+        { skill: "HTML", imgSrc: `${import.meta.env.BASE_URL}HtmlLogo.png` },
+        { skill: "CSS", imgSrc: `${import.meta.env.BASE_URL}CssLogo.png` },
+        { skill: "JavaScript", imgSrc: `${import.meta.env.BASE_URL}JSLogo.png` },
+        { skill: "SQL", imgSrc: `${import.meta.env.BASE_URL}BDLogo.png` },
+        { skill: "Python", imgSrc: `${import.meta.env.BASE_URL}PythonLogo.png` },
+        { skill: "Java", imgSrc: `${import.meta.env.BASE_URL}JavaLogo.png` }
     ]
     const specialization = "Development of native applications using Android Studio with Kotlin, leveraging the modern declarative approach of Jetpack Compose to build dynamic and responsive user interfaces. Also, Web application development with React on the frontend. Experience in consuming and creating REST APIs, as well as integrating and managing relational databases."
     

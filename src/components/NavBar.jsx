@@ -4,10 +4,10 @@ import { Menu, X } from 'lucide-react';
 import Titles from "./Titles";
 
 const navItems = [
-  { label: "Home", target: "/#home" },
-  { label: "Skills", target: "/#skills" },
-  { label: "Projects", target: "/#projects" },
-  { label: "Contact", target: "/#contact" },
+  { label: "Home", target: "#home" },
+  { label: "Skills", target: "#skills" },
+  { label: "Projects", target: "#projects" },
+  { label: "Contact", target: "#contact" },
 ];
 
 export default function NavBar() {

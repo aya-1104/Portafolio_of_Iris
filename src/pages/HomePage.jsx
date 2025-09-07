@@ -9,11 +9,11 @@ function HomePage() {
     return (
     <GalaxyBackground starCount={200} rotationSpeed={.1}>
     <section id="home" className="h-auto md:min-h-screen scroll-mt-20 p-[50px] flex flex-col md:flex-row gap-6 md:justify-between md:items-center">
-        <div className="w-full md:w-1/2">
-          <Titles h1={"Hi! I am"} h2={"Iris Ayala"} className="text-4xl md:text-6xl justify-start mb-6"/>
+        <div className="w-full md:w-[600px]">
+          <Titles h1={"Hi! I am"} h2={"Iris Ayala"} className="text-4xl md:text-6xl justify-start mb-6 flex-wrap"/>
           <Texts text={p1}/>
         </div>
-        <div className="w-full md:w-1/3">
+        <div className="w-full md:w-1/2 ">
         <Spline scene="https://prod.spline.design/oSzwddRMsHinHlXR/scene.splinecode"  onLoad={() => console.log('Spline loaded')}/>
         </div>
     </section>
